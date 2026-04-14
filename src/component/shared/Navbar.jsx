@@ -1,12 +1,11 @@
-import React from 'react';
-import MyLink from '@/component/shared/MyLink';
+import React from "react";
+import MyLink from "@/component/shared/MyLink";
 
 import { RiHome2Line } from "react-icons/ri";
 import { IoMdTime } from "react-icons/io";
 import { GoGraph } from "react-icons/go";
 
 const Navbar = () => {
-
     const navItems = [
         { href: "/", label: "Home", icon: RiHome2Line },
         { href: "/timeline", label: "Timeline", icon: IoMdTime },
@@ -14,24 +13,23 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className='container mx-auto'>
-            <div className="navbar bg-base-100 ">
+        <nav className="container mx-auto">
+            <div className="container mx-auto flex justify-between items-center py-3">
 
-                <div className="navbar-start">
-                    <h1 className="font-bold  text-3xl">
-                        KeenKeeper
-                    </h1>
-                </div>
+                {/* Logo */}
+                <h1 className="text-3xl font-bold">
+                    KeenKeeper
+                </h1>
 
-                <div className="navbar-end gap-4">
-                    {/* use client */}
+                {/* Links */}
+                <div className="flex gap-3">
                     {navItems.map((item) => {
                         const Icon = item.icon;
 
                         return (
                             <MyLink key={item.href} href={item.href}>
                                 <Icon className="text-xl" />
-                                {item.label}
+                                <span>{item.label}</span>
                             </MyLink>
                         );
                     })}

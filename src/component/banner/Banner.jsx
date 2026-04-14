@@ -16,6 +16,33 @@ relationships that matter most.
     </div>
   </div>
 </div>
+
+
+<div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-6">
+
+    <div className="flex flex-col items-center justify-center w-60 h-30 p-4 bg-white shadow rounded-lg">
+        <h1 className="text-3xl font-bold ">10</h1>
+        <p className="text-gray-600">Total Friends</p>
+    </div>
+
+    <div className="flex flex-col items-center justify-center w-60 h-30 p-4 bg-white shadow rounded-lg">
+        <h1 className="text-3xl font-bold ">3</h1>
+        <p className="text-gray-600">On Track</p>
+    </div>
+
+    <div className="flex flex-col items-center justify-center w-60 h-30 p-4 bg-white shadow rounded-lg">
+        <h1 className="text-3xl font-bold ">6</h1>
+        <p className="text-gray-600">Need Attention</p>
+    </div> 
+
+    <div className="flex flex-col items-center justify-center w-60 h-30 p-4 bg-white shadow rounded-lg">
+        <h1 className="text-3xl font-bold ">12</h1>
+        <p className="text-gray-600">Interactions This Month</p>
+    </div>
+
+   
+
+</div>
        </section>
     );
 };
