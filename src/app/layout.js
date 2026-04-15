@@ -1,6 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/component/shared/Navbar";
+import Footer from "@/component/Footer/Footer";
+import FriendList from "@/component/FriendCart/FriendList";
+import Banner from "@/component/banner/Banner";
 
 
 
@@ -28,8 +31,14 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Navbar></Navbar>
         
-        {children}
-       
+        <main className="container mx-auto">
+          {children}
+        </main>
+
+        <Banner></Banner>
+      {/* <FriendList></FriendList> */}
+
+       <Footer></Footer>
         </body>
     </html>
   );
