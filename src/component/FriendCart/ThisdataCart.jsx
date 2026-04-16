@@ -5,7 +5,7 @@ const ThisdataCart = ({friendCards}) => {
         
 <>
 <section className='container mx-auto'>
-    <h1 className='text-5xl font-bold'>Your Friends:</h1>
+    <h1 className='text-2xl font-bold'>Your Friends:</h1>
         <div className="card bg-base-100 w-96 shadow-sm">
   <figure className="px-10 pt-10">
     {/* <img
@@ -17,7 +17,7 @@ const ThisdataCart = ({friendCards}) => {
     <h2 className="card-title">Card Title</h2>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div className="card-actions">
-      <button className="btn btn-primary">Buy Now</button>
+      <button className="btn btn-primary">Datails</button>
     </div>
   </div>
 </div>
