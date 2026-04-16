@@ -1,4 +1,5 @@
 import FinalFriendCart from "@/component/FriendCart/FinalFriendCart";
+import Link from "next/link";
 
 const DataPage = async () => {
 
@@ -14,12 +15,15 @@ const DataPage = async () => {
 
     return (
         <div>
-            <h2>hello Data: {friendCartData.length}</h2>
+            <h2 className="text-2xl font-bold">Your Friends: {friendCartData.length}</h2>
 
             <div className="grid grid-cols-4 gap-4 ">
                 {
                 friendCartData.map(friendCards => <FinalFriendCart friendCards={friendCards} key={friendCards.id}></FinalFriendCart>)
                 }
+            </div>
+            <div className="flex justify-center items-center mt-4">
+                <Link href={'/'}><button className='btn btn-success'>Back to Home</button></Link>
             </div>
         </div>
     );

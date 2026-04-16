@@ -17,7 +17,7 @@ const ThisdataCart = ({friendCards}) => {
     <h2 className="card-title">Card Title</h2>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div className="card-actions">
-      <button className="btn btn-primary">Datails</button>
+      <button className="btn btn-primary">No Data</button>
     </div>
   </div>
 </div>

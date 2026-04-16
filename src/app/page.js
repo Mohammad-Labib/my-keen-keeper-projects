@@ -1,15 +1,11 @@
-import Link from "next/link";
+import React from 'react';
 
-export default function Home() {
+const MainPage = () => {
     return (
-        <div className="flex justify-center items-center ">
-            
-            <Link href="/dataStor">
-                <button className="btn btn-primary">
-                    Go to Data Page
-                </button>
-            </Link>
-
+        <div>
+           
         </div>
     );
-}
+};
+
+export default MainPage;
