@@ -4,6 +4,8 @@ import Navbar from "@/component/shared/Navbar";
 import Footer from "@/component/Footer/Footer";
 import FriendList from "@/component/FriendCart/FriendList";
 import Banner from "@/component/banner/Banner";
+import FinalFriendCart from "@/component/FriendCart/FinalFriendCart";
+import ThisdataCart from "@/component/FriendCart/ThisdataCart";
 
 
 
@@ -33,9 +35,12 @@ export default function RootLayout({ children }) {
         
         <main className="container mx-auto">
           {children}
+       
         </main>
-
+    
         <Banner></Banner>
+
+        <ThisdataCart></ThisdataCart>
       {/* <FriendList></FriendList> */}
 
        <Footer></Footer>
