@@ -1,8 +1,9 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const FinalFriendCart = ({friendCards}) => {
-    const {name, image, time, type, status} = friendCards;
+    const {id, name, image, time, type, status} = friendCards;
     return (
         <div className="card bg-base-100 shadow-sm">
   <figure className="px-10 pt-10 flex justify-center">
@@ -26,9 +27,11 @@ const FinalFriendCart = ({friendCards}) => {
     <div className=' rounded-2xl w-20 h-6 text-center bg-green-200'>
         <h1 >{type}</h1>
     </div>
-    <div className="card-actions">
-      <button className="w-30 h-10 text-xl text-center  bg-red-500 text-white rounded-full">{status}</button>
-    </div>
+    <Link href={`/dataStor/${id}`}>
+        <div className="card-actions">
+        <button className="w-30 h-10 text-xl text-center  bg-red-500 text-white rounded-full">{status}</button>
+        </div>
+    </Link>
   </div>
 </div>
     );
