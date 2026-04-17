@@ -17,7 +17,7 @@ const DataPage = async () => {
         <div>
             <h2 className="text-2xl font-bold">Your Friends: {friendCartData.length}</h2>
 
-            <div className="grid grid-cols-4 gap-4 ">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ">
                 {
                 friendCartData.map(friendCards => <FinalFriendCart friendCards={friendCards} key={friendCards.id}></FinalFriendCart>)
                 }

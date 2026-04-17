@@ -5,7 +5,7 @@ import React from 'react';
 const FinalFriendCart = ({friendCards}) => {
     const {id, name, image, time, type, status} = friendCards;
     return (
-        <div className="card bg-base-100 shadow-sm">
+        <div className="card bg-base-100 shadow-sm ">
   <figure className="px-10 pt-10 flex justify-center">
     
     <div className="w-[120px] h-[120px] rounded-full overflow-hidden ">
