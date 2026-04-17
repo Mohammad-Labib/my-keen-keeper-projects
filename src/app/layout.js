@@ -42,6 +42,7 @@ export default function RootLayout({ children }) {
 
         <ThisdataCart></ThisdataCart>
       {/* <FriendList></FriendList> */}
+      
 
        <Footer></Footer>
         </body>

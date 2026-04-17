@@ -5,3 +5,8 @@
 
 ==============================
 1.add a friend btn e click korle amar all data show korbe...
+
+
+==============================
+1. problem locel host sob thik vabe kaj kore but vercel devloy koci live link kaj kore na 
+

@@ -5,7 +5,7 @@ const cardDatails = () => {
         <div>
             Now i am here datails Page 
         </div>
-    );
+    ); 
 };
 
 export default cardDatails;

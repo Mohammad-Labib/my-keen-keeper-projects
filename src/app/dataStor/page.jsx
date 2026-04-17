@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const DataPage = async () => {
 
-    const res = await fetch('http://localhost:3000/friendData.json', {
+    const res = await fetch('https://my-keen-keeper-projects.vercel.app/friendData.json', {
         cache: "no-store"
     });
 
@@ -11,7 +11,7 @@ const DataPage = async () => {
 
     const friendCartData = data; 
 
-    console.log("hello data", friendCartData);
+    // console.log("hello data", friendCartData);
 
     return (
         <div>
