@@ -6,6 +6,8 @@ import FriendList from "@/component/FriendCart/FriendList";
 import Banner from "@/component/banner/Banner";
 import FinalFriendCart from "@/component/FriendCart/FinalFriendCart";
 import ThisdataCart from "@/component/FriendCart/ThisdataCart";
+// import { Toaster } from "react-hot-toast";
+import { ToastContainer } from "react-toastify";
 
 
 
@@ -33,11 +35,12 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Navbar></Navbar>
         
+        {/* <Toaster position="top-center" /> */}
         <main className="container mx-auto">
           {children}
        
         </main>
-    
+    <ToastContainer />
         <Banner></Banner>
 
         <ThisdataCart></ThisdataCart>
